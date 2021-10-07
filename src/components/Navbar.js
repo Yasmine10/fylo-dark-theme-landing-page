@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { ReactComponent as Logo } from '../assets/images/logo.svg';
+import Logo from "../assets/images/logo.svg";
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className="navbar container">
             <div className="logo-container">
-                <Logo />
+                <img src={Logo} alt="" />
             </div>
-            <ul>
-                <li>Features</li>
-                <li>Team</li>
-                <li>Sign In</li>
+            <ul className="nav-items">
+                <li className="nav-item">Features</li>
+                <li className="nav-item">Team</li>
+                <li className="nav-item">Sign In</li>
             </ul>
         </nav>
     )
