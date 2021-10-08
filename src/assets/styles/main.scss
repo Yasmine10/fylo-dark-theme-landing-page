@@ -1,0 +1,11 @@
+@use "./base/reset";
+@use "./base/root";
+@use "./base/global";
+@use "./base/utilities";
+
+@use "./components/navbar";
+@use "./components/footer";
+
+@use "./views/home";
+
+@use "./components/testimonials";
