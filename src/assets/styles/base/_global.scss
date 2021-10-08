@@ -23,6 +23,11 @@ h2 {
     padding-bottom: 1em;
 }
 
+h3 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+}
+
 .btn {
     border: none;
     border-radius: 10rem;
@@ -49,8 +54,16 @@ h2 {
 input {
     border: none;
     border-radius: 5rem;
-    padding: 0.85rem 2.25rem;
+    // padding: 0.85rem 2.25rem;
+    padding-block: 0.85rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 1.75rem;
+    width: 100%;
+
+    @media (min-width: 1000px) {
+        width: 70%;
+    }
 }
 
 input::placeholder {

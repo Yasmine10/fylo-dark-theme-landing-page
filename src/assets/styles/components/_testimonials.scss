@@ -1,4 +1,4 @@
-.testimonials {
+.testimonials-wrapper {
     background-color: var(--clr-primary-bg-main);
     padding-block: 8rem;
 
@@ -6,6 +6,17 @@
         width: 32px;
         margin-left: 1.5rem;
         top: 0.5rem;
+    }
+
+    .testimonials {
+
+        @media (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: start;
+            grid-auto-rows: 1fr;
+            
+        }
     }
 
     blockquote {
@@ -17,6 +28,10 @@
 
         & + blockquote {
             margin-top: 1em;
+
+            @media (min-width: 1000px) {
+                margin-top: 0;
+            }
         }
 
         p {
@@ -26,9 +41,10 @@
 
     .client-info {
         display: grid;
-        grid-template-columns: 13% 87%;
+        grid-template-columns: 1fr minmax(0, 9fr);
         grid-template-rows: 50% 50%;
         margin-top: 1em;
+        column-gap: 0.5rem;
 
         img {
             grid-column: 1 / 2;
@@ -56,5 +72,13 @@
 
             font-size: var(--fs-text-xxxs);
         }
+    }
+
+    
+}
+
+@media (min-width: 1000px) {
+    .testimonials-wrapper {
+        padding-block: 12rem;
     }
 }

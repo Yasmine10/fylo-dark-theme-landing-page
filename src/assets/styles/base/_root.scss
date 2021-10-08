@@ -8,18 +8,40 @@
     --clr-primary-bg-testimonials: hsl(219, 30%, 18%);
 
     --clr-accent-cyan: hsl(176, 68%, 64%);
+    --clr-accent-cyan-light: hsla(186, 61%, 72%, 1);
     --clr-accent-blue: hsl(198, 60%, 50%);
     --clr-accent-error: hsl(0, 100%, 63%);
 
     --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-light-grey: hsl(0, 0%, 55%);
+
+
+    // font stuff
 
     --ff-primary: "Open Sans", sans-serif;
     --ff-accent: "Raleway", sans-serif;
 
+    --fw-regular: 400;
+    --fw-bold: 700;
+
     --fs-body-mobile: 0.875rem; // 14px
-    --fs-nav-mobile: 0.75rem; // 14px
+    
+    --fs-h1: clamp(1.5rem, 2vw + 1rem, 2.5rem); // 24px - 40px  main title
+    --fs-h2: clamp(1.125rem, 2vw + 1rem, 2.5rem); // 18px - 40px stay productive
+    --fs-h3: clamp(1.125rem, 1vw + 0.5rem, 2rem); // 18px - 32px   subscribe
+    --fs-h4: clamp(1.125rem , 1vw + 0.25rem, 1.25rem); // 18px - 20px   features
 
-    --fs-desktop: 1.25rem; // 20px
-    --fs-nav-desktop: 1.0625rem; // 17px
 
+    // --fs-text-nav: clamp(0.75rem, , 1rem); // 12px - 16px
+
+    --fs-text: 1rem; // 16px footer
+    --fs-text-s: 0.875rem; // 14px footer, early access text, btns, features text
+    --fs-text-xxs: 0.625rem; // 10px testimonial text
+    --fs-text-xxxs: 0.5rem; // 8px testimonial job title
+
+    --fs-text-intro: 0.875rem; // 14px
+    --fs-text-stay-productive: clamp(0.875rem, 1vw + 0.25rem, 1rem);
+    // --fs-text: clamp(0.875rem, , 1.25rem) ; // 14px - 20px
+    // --fs-text-s: clamp(0.625rem, , ) ; // 10px
+    // --fs-text-xs: clamp( , , ); // 7px
 }
