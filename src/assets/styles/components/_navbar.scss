@@ -1,21 +1,25 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 0.75rem;
+.navbar-wrapper {
+    background-color: var(--clr-primary-bg-signup);
 
-    .logo-container {
-
-        img {
-            max-width: clamp(5rem, 10vw + 1.5rem, 12.5rem);
-        }
-
-    }
-
-    .nav-items {
+    .navbar {    
         display: flex;
-        gap: 1.5em;
-
-        font-size: clamp(var(--fs-nav-mobile), calc(1vw + 0.25rem), var(--fs-nav-desktop));
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 0.75rem;
+    
+        .logo-container {
+    
+            img {
+                max-width: clamp(5rem, 10vw + 1.5rem, 12.5rem);
+            }
+    
+        }
+    
+        .nav-items {
+            display: flex;
+            gap: 1.5em;
+    
+            font-size: clamp(var(--fs-nav-mobile), calc(1vw + 0.25rem), var(--fs-nav-desktop));
+        }
     }
 }
