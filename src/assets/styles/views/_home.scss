@@ -1,15 +1,36 @@
-.intro-wrapper {
+.home {
+    
     background-color: var(--clr-primary-bg-signup);
-    background-image: url("../../images/bg-curvy-mobile.svg");
+    
+    
+    
+    
+}
+
+.intro-wrapper {
+    background:  url('../../images/bg-curvy-mobile.svg'), linear-gradient(to bottom, var(--clr-primary-bg-signup) 65%, var(--clr-primary-bg-main) 65%);
     background-repeat: no-repeat;
-    background-position: 50% 70%;
-    background-size: auto;
-    width: 100%;
-    height: auto;
+    background-size: 100%;
+    background-position: 50% 55%;
+    
     text-align: center;
 
+    h1 {
+        // padding-top: 3em;
+
+
+        span {
+            display: block;
+            margin-inline: 2rem;
+        }
+    }
+
+    p {
+        background-color: var(--clr-primary-bg-main);
+    }
+
     img {
-        padding-block: 3rem;
+        padding-block: 2rem;
     }
 
     .btn-intro {
@@ -20,6 +41,7 @@
 }
 
 .features-wrapper {
+    background-color: var(--clr-primary-bg-main);
     padding-block: 7.5rem;
 
     .features {
@@ -44,17 +66,17 @@
         }
 
         & > * {
-            div + div {}
+            div + div {
+            }
         }
     }
 }
 
 .stay-productive-wrapper {
-
+    background-color: var(--clr-primary-bg-main);
     .stay-productive {
-
         .img-container img {
-            margin-block: 3rem;
+            padding-block: 3rem;
         }
 
         p {
@@ -66,19 +88,25 @@
         }
 
         .link {
+            text-decoration: none;
             display: inline-flex;
             align-items: center;
             padding-bottom: 0.25em;
 
-            color: var(--clr-accent-cyan); 
+            color: var(--clr-accent-cyan);
             border-bottom: 1px solid var(--clr-accent-cyan);
 
             span {
                 margin-right: 0.5em;
             }
 
-            img {
-                width: 1.25rem;
+            &:hover {
+                color: var(--clr-neutral-white);
+                border-bottom: 1px solid var(--clr-neutral-white);
+
+                .arrow-icon g g use {
+                    fill: var(--clr-neutral-white);
+                }
             }
         }
     }

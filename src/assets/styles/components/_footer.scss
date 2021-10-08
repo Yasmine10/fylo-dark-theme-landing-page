@@ -52,8 +52,39 @@
         gap: 1.25rem;
 
         .company-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .location, .contact-info div {
             display: grid;
-            //TODO: lookup grid before making this
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+
+            .icon {
+                grid-column: 1 / 2;
+                grid-row: 1 / -1;
+            }
+
+            p {
+                grid-column: 2 / 3;
+                grid-row: 1 / -1;
+                
+            }
+        }
+
+        .location {
+            align-items: flex-start;  
+
+            .icon {
+                margin-top: 0.5em;
+            }
+        }
+
+        .contact-info div {
+            align-items: center;
         }
 
         ul {

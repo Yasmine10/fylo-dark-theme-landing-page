@@ -8,7 +8,7 @@ import feature3Img from '../assets/images/icon-collaboration.svg';
 import feature4Img from '../assets/images/icon-any-file.svg';
 
 import stayProductiveImg from '../assets/images/illustration-stay-productive.png';
-import arrowIcon from '../assets/images/icon-arrow.svg';
+import { ReactComponent as ArrowIcon } from '../assets/images/icon-arrow.svg';
 
 import Testimonials from '../components/home/Testimonials';
 
@@ -19,7 +19,7 @@ const Home = () => {
             <div className="intro-wrapper">
                 <div className="intro container">
                     <img src={introImg} alt="Illustration about storing files in one location" />
-                    <h1>All your files in one secure location, accessible anywhere.</h1>
+                    <h1><span>All your files in one secure location, accessible anywhere.</span></h1>
                     <p>Fylo stores all your most important files in one secure location. Access them wherever 
     you need, share and collaborate with friends family, and co-workers.</p>
                     <a href="#" className="btn btn-primary btn-intro">Get Started</a>
@@ -73,8 +73,9 @@ const Home = () => {
   attachments required.</p>
                     <a href="#" className="link">
                         <span>See how Fylo works</span>
-                        <img src={arrowIcon} alt="" />
+                        <ArrowIcon className="arrow-icon" />
                     </a>
+                    
                     
                 </div>
             </div>
