@@ -1,0 +1,129 @@
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-flow: dense;
+}
+
+.subscription {
+    grid-row: 1 / 3; 
+    grid-column: 1 / -1;
+    padding: 0;
+
+    .early-access {
+        background-color: var(--clr-primary-bg-signup);
+        border-radius: 9px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+        padding: 2.5em 1.75em;
+        text-align: center;
+
+        p {
+            font-size: var(--fs-body-mobile);
+        }
+
+        .btn,
+        input {
+            width: 100%;
+        }
+    }
+}
+
+.background {
+    background-color: var(--clr-primary-bg-footer);
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    z-index: -1;
+}
+
+.footer {
+    background-color: var(--clr-primary-bg-footer);
+    grid-row: 3 / -1;
+    grid-column: 1 / -1;
+
+    .logo-container {
+        width: 6.75rem;
+        padding-bottom: 2.5em;
+        padding-top: 3em;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        .company-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .location, .contact-info div {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 1fr;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+
+            .icon {
+                grid-column: 1 / 2;
+                grid-row: 1 / -1;
+            }
+
+            p {
+                grid-column: 2 / 3;
+                grid-row: 1 / -1;
+                
+            }
+        }
+
+        .location {
+            align-items: flex-start;  
+
+            .icon {
+                margin-top: 0.5em;
+            }
+        }
+
+        .contact-info div {
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75em;
+
+            & > *:hover {
+                font-weight: var(--fw-bold);
+            }
+        }
+    }
+
+    .social-links {
+        margin-top: 1.5rem;
+        margin-bottom: 3.5rem;
+
+        &,
+        & > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75em;
+        }
+
+        a {
+            font-size: var(--fs-body-mobile);
+            color: var(--clr-neutral-white);
+
+            width: 1.875rem;
+            height: 1.875rem;
+            border-radius: 50%;
+            border: 1.5px solid var(--clr-neutral-white);
+
+            &:hover,
+            &:focus {
+                color: var(--clr-accent-cyan);
+                border: 1.5px solid var(--clr-accent-cyan);
+            }
+        }
+    }
+}
