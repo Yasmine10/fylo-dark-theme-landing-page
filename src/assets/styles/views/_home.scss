@@ -1,0 +1,85 @@
+.intro-wrapper {
+    background-color: var(--clr-primary-bg-signup);
+    background-image: url("../../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    img {
+        padding-block: 3rem;
+    }
+
+    .btn-intro {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.85rem 5rem;
+    }
+}
+
+.features-wrapper {
+    padding-block: 7.5rem;
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        text-align: center;
+
+        .img-container img {
+            margin: 0 auto;
+            width: 3.75rem;
+        }
+
+        h3 {
+            margin-top: 1em;
+        }
+
+        p {
+            font-size: var(--fs-text-s);
+            padding-top: 0.5em;
+        }
+
+        & > * {
+            div + div {}
+        }
+    }
+}
+
+.stay-productive-wrapper {
+
+    .stay-productive {
+
+        .img-container img {
+            margin-block: 3rem;
+        }
+
+        p {
+            font-size: var(--fs-text-stay-productive);
+        }
+
+        p + p {
+            margin-block: 1em;
+        }
+
+        .link {
+            display: inline-flex;
+            align-items: center;
+            padding-bottom: 0.25em;
+
+            color: var(--clr-accent-cyan); 
+            border-bottom: 1px solid var(--clr-accent-cyan);
+
+            span {
+                margin-right: 0.5em;
+            }
+
+            img {
+                width: 1.25rem;
+            }
+        }
+    }
+}
